@@ -1,11 +1,43 @@
-/* Tailwind CSS is loaded via CDN in index.html for this project */
+/* RPR Communications Brand Kit */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Custom Reset or global overrides */
+:root {
+  /* Brand Colors */
+  --color-charcoal: #2B2F33;
+  --color-black: #000000;
+  --color-slate-gray: #3A4045;
+  --color-cyan: #00D9FF;
+  --color-teal: #008B8B;
+  --color-white: #FFFFFF;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font-primary);
   background-color: #000000;
-  font-family: 'Inter', sans-serif;
+  background-image: url('/assets/hexagon-pattern.png');
+  background-size: 600px 600px;
+  background-repeat: repeat;
+  background-position: center;
+  color: var(--color-white);
+}
+
+/* Invert hexagon colors (gray on black instead of white on gray) */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: inherit;
+  filter: invert(1) opacity(0.08);
+  pointer-events: none;
 }
