@@ -6,7 +6,7 @@
     <div class="hidden md:flex items-center gap-8">
       <a href="#foundations" class="text-sm font-medium text-gray-300 hover:text-rpr-cyan transition-colors">METHODS</a>
       <a href="#highlights" class="text-sm font-medium text-gray-300 hover:text-rpr-cyan transition-colors">HIGHLIGHTS</a>
-      <a href="#about" class="text-sm font-medium text-gray-300 hover:text-rpr-cyan transition-colors">OVERSIGHT</a>
+      <a href="#chat" class="text-sm font-medium text-gray-300 hover:text-rpr-cyan transition-colors">ASK OLLIE</a>
       <a href="https://verify.rprcomms.com" target="_blank" class="text-sm font-medium text-gray-300 hover:text-rpr-cyan transition-colors">PRODUCTS</a>
       <app-auth-button></app-auth-button>
       <button (click)="scrollToChat()" class="px-4 py-2 border border-rpr-cyan text-rpr-cyan text-sm font-bold rounded hover:bg-rpr-cyan hover:text-black transition-all">
@@ -24,7 +24,7 @@
     <div class="md:hidden bg-rpr-bg border-b border-white/10 p-6 flex flex-col gap-4">
       <a href="#foundations" (click)="toggleMobileMenu()" class="text-gray-300 hover:text-rpr-cyan">METHODS</a>
       <a href="#highlights" (click)="toggleMobileMenu()" class="text-gray-300 hover:text-rpr-cyan">HIGHLIGHTS</a>
-      <a href="#about" (click)="toggleMobileMenu()" class="text-gray-300 hover:text-rpr-cyan">OVERSIGHT</a>
+      <a href="#chat" (click)="toggleMobileMenu()" class="text-gray-300 hover:text-rpr-cyan">ASK OLLIE</a>
       <a href="https://verify.rprcomms.com" target="_blank" (click)="toggleMobileMenu()" class="text-gray-300 hover:text-rpr-cyan">PRODUCTS</a>
       <div class="py-2">
         <app-auth-button></app-auth-button>
@@ -318,9 +318,9 @@
           <!-- Step 1 -->
           <div class="group flex flex-col items-center gap-3 text-center">
             <!-- Icon -->
-            <div class="relative flex items-center justify-center">
-              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none"></div>
-              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)]">
+            <div class="relative flex items-center justify-center overflow-visible">
+              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none z-0"></div>
+              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)] z-10">
                 <!-- Spark -->
                 <svg class="absolute -top-3 -right-3 w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 0L61.226 38.774L100 50L61.226 61.226L50 100L38.774 61.226L0 50L38.774 38.774L50 0Z"></path>
@@ -342,9 +342,9 @@
           <!-- Step 2 -->
           <div class="group flex flex-col items-center gap-3 text-center">
             <!-- Icon -->
-            <div class="relative flex items-center justify-center">
-              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none"></div>
-              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)]">
+            <div class="relative flex items-center justify-center overflow-visible">
+              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none z-0"></div>
+              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)] z-10">
                 <!-- Spark -->
                 <svg class="absolute -top-3 -right-3 w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 0L61.226 38.774L100 50L61.226 61.226L50 100L38.774 61.226L0 50L38.774 38.774L50 0Z"></path>
@@ -366,9 +366,9 @@
           <!-- Step 3 -->
           <div class="group flex flex-col items-center gap-3 text-center">
             <!-- Icon -->
-            <div class="relative flex items-center justify-center">
-              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none"></div>
-              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)]">
+            <div class="relative flex items-center justify-center overflow-visible">
+              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none z-0"></div>
+              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)] z-10">
                 <!-- Spark -->
                 <svg class="absolute -top-3 -right-3 w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 0L61.226 38.774L100 50L61.226 61.226L50 100L38.774 61.226L0 50L38.774 38.774L50 0Z"></path>
@@ -390,9 +390,9 @@
           <!-- Step 4 -->
           <div class="group flex flex-col items-center gap-3 text-center">
             <!-- Icon -->
-            <div class="relative flex items-center justify-center">
-              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none"></div>
-              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)]">
+            <div class="relative flex items-center justify-center overflow-visible">
+              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none z-0"></div>
+              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)] z-10">
                 <!-- Spark -->
                 <svg class="absolute -top-3 -right-3 w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 0L61.226 38.774L100 50L61.226 61.226L50 100L38.774 61.226L0 50L38.774 38.774L50 0Z"></path>
@@ -414,9 +414,9 @@
           <!-- Step 5 -->
           <div class="group flex flex-col items-center gap-3 text-center">
             <!-- Icon -->
-            <div class="relative flex items-center justify-center">
-              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none"></div>
-              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)]">
+            <div class="relative flex items-center justify-center overflow-visible">
+              <div class="absolute inset-x-4 bottom-0 h-3 rounded-full bg-white/12 blur-xl pointer-events-none z-0"></div>
+              <div class="relative flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-black squircle shadow-[0_0_25px_rgba(34,211,238,0.35)] transition-all duration-300 group-hover:shadow-[0_0_35px_rgba(34,211,238,0.5)] z-10">
                 <!-- Spark -->
                 <svg class="absolute -top-3 -right-3 w-5 h-5 sm:w-6 sm:h-6 text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" fill="currentColor" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                   <path d="M50 0L61.226 38.774L100 50L61.226 61.226L50 100L38.774 61.226L0 50L38.774 38.774L50 0Z"></path>
@@ -607,9 +607,8 @@
     <div class="rounded-lg border border-rpr-cyan/20 shadow-lg shadow-rpr-cyan/5 p-8 md:p-12">
       <div class="flex flex-col md:flex-row gap-12 items-center">
         <div class="w-full md:w-1/3">
-          <div class="relative h-64 md:h-80">
-            <div class="absolute inset-0 bg-rpr-cyan transform translate-x-4 translate-y-4 rounded-lg opacity-20 h-full"></div>
-            <div class="relative rounded-lg w-full h-full bg-[#0a0d14] border border-white/5 p-6 shadow-2xl">
+          <div class="relative">
+            <div class="relative rounded-lg w-full aspect-[3/4] bg-[#0a0d14] border border-white/5 p-6 shadow-2xl">
               <svg viewBox="0 0 400 400" class="w-full h-full" aria-label="Chessboard sketch showing strategic planning moves" xmlns="http://www.w3.org/2000/svg">
                 <!-- Chessboard grid - hand-drawn style -->
                 <g stroke="rgba(255,255,255,0.7)" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -681,7 +680,7 @@
           </div>
         </div>
         <div class="w-full md:w-2/3">
-          <app-section-header>THE OVERSIGHT</app-section-header>
+          <app-section-header>THE OVERWATCH</app-section-header>
           <h3 class="text-2xl font-bold text-white mb-2">Puvan Sivanasan</h3>
           <div class="text-rpr-cyan font-medium mb-6">Founder & Principal Strategist</div>
           <div class="text-white mb-6 leading-relaxed space-y-4">
