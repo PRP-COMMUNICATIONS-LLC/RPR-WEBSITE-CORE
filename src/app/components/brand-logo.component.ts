@@ -90,7 +90,7 @@ import { Component } from '@angular/core';
         </g>
       </svg>
       <span class="text-xl md:text-2xl font-semibold tracking-wide text-white uppercase">
-        RPR COMMUNICATIONS LLC
+        RPR COMMUNICATIONS
       </span>
     </div>
   `,
