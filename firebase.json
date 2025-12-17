@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "rpr-website-kontrol",
     "public": "dist/rpr-communications-spa/browser",
     "ignore": [
       "firebase.json",
