@@ -7,6 +7,7 @@ import { IconComponent, SectionHeaderComponent, CardComponent } from './componen
 import { AuthButtonComponent } from './components/auth-button.component';
 import { GeminiService } from './services/gemini.service';
 import { AuthService } from './services/auth.service';
+import { MobileNavComponent } from './components/mobile-nav.component';
 
 interface ChatMessage {
   role: 'user' | 'ai';
@@ -17,13 +18,14 @@ interface ChatMessage {
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule, 
+    CommonModule,
     ReactiveFormsModule,
     BrandLogoComponent,
     IconComponent,
     SectionHeaderComponent,
     CardComponent,
-    AuthButtonComponent
+    AuthButtonComponent,
+    MobileNavComponent
   ],
   templateUrl: './app.component.html',
   styles: [`
@@ -44,7 +46,7 @@ export class AppComponent implements OnInit, OnDestroy {
   chatMessages = signal<ChatMessage[]>([]);
   isLoading = signal(false);
   chatInput = new FormControl('');
-  
+
   // Foundation cards expanded state
   foundationExpanded = signal({
     sourceOfTruth: false,
@@ -110,7 +112,7 @@ export class AppComponent implements OnInit, OnDestroy {
     try {
       // Check for "what's wrong with the world" variations
       const lowerMessage = message.toLowerCase().trim();
-      const isWorldQuestion = 
+      const isWorldQuestion =
         lowerMessage.includes("what's wrong with the world") ||
         lowerMessage.includes("what is wrong with the world") ||
         lowerMessage.includes("whats wrong with the world") ||
@@ -122,7 +124,7 @@ export class AppComponent implements OnInit, OnDestroy {
       } else {
         response = await this.geminiService.sendMessage(this.chatMessages(), message);
       }
-      
+
       this.chatMessages.update(msgs => [...msgs, { role: 'ai', content: response }]);
     } catch (error) {
       this.chatMessages.update(msgs => [...msgs, { role: 'ai', content: "Connection error. Please try again." }]);
@@ -134,7 +136,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   getDailyJoke(): string {
     const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
-    
+
     const jokes = [
       // WEEK 1: CLIENT RELATIONS (COMPARE & CONTRAST)
       "Client feedback is like a box of chocolates... except every chocolate is a revision and you're allergic to all of them.",
@@ -173,7 +175,7 @@ export class AppComponent implements OnInit, OnDestroy {
       "Strategy deck: 80 slides, 3 frameworks, 17 charts. Client: 'Can you just tell me what to do?' Us: 'It's on slide 73.' Client: 'Too long, didn't read.'",
       "Every agency has that one client who pays on time, loves your work, and never asks for revisions. That's called a hallucination. Seek help."
     ];
-    
+
     return jokes[dayOfYear % jokes.length];
   }
 
