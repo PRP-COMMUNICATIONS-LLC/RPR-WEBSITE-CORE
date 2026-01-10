@@ -92,7 +92,7 @@ Note: `@angular/fire` was initially considered but we're using Firebase SDK dire
 In Firebase Console → Authentication → Settings → Authorized domains, ensure these domains are added:
 - ✅ `www.rprcomms.com`
 - ✅ `rprcomms.com`
-- ✅ `rpr-comms-website-bjazd91w5-butterdime.vercel.app`
+- ✅ `api.verify.rprcomms.com` (Singapore Node)
 - ✅ `localhost` (for local development)
 
 ### 8. API Key Security (Important!)
