@@ -3,6 +3,17 @@
     "default": "rpr-verify-b",
     "production": "rpr-corporate-site"
   },
-  "targets": {},
+  "targets": {
+    "rpr-corporate-site": {
+      "hosting": {
+        "verify": [
+          "rpr-verify-site"
+        ],
+        "corporate": [
+          "rpr-corporate-site"
+        ]
+      }
+    }
+  },
   "etags": {}
 }
